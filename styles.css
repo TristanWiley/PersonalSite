@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-weight: 500;
+    font-family: 'HelveticaNeue';
+}
+
+section {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    background-color: #373B44;
+    height: 100vh;
+}
+
+section:nth-of-type(2n) {
+    background-color: #8F3985;
+}
+
+.intro {
+    height: 100vh;
+}
+
+.projects {
+    margin-top: 5%;
+    width: 50%;
+    text-align: center;
+    float: right;
+}
+
+.project {
+    padding: 20px;
+    display: inline-block;
+    background-color: #373B44;
+    margin: 10px;
+    height: 100px;
+    width: 40%;
+}
+
+.me {
+    display: -webkit-box;
+}
+
+.content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about {
+    width: 50%;
+}
+
+img {
+    height: 200px;
+    margin-right: 30px;
+    border-radius: 100px;
+}
+
+h1 {
+    font-size: 3em;
+    display: block;
+    color: white;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #C3CAD9;
+}
+
+.link {
+    font-weight: 700;
+    color: #373B44;
+    position: relative;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+.link:active {
+    top: 1px;
+}
+
+footer {
+    padding: 1% 5%;
+    text-align: center;
+    background-color: #373B44;
+    color: white;
+}
+
+footer a {
+    color: #FE4B74;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.svgContainer {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+}
+
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #2994D1;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow
+/*Safari and Chrome*/
+
+{
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
+}
